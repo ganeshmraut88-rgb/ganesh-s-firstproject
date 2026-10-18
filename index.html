@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Member Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="login">
+      <h1 class="login__title">Member Login</h1>
+
+      <form class="login__form" action="#" method="post" onsubmit="event.preventDefault()">
+        <label class="field">
+          <span class="field__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22">
+              <circle cx="12" cy="8" r="3.4" fill="#f39a2e" />
+              <path
+                d="M6.2 18.6c.6-3.1 3-4.8 5.8-4.8s5.2 1.7 5.8 4.8"
+                fill="none"
+                stroke="#f39a2e"
+                stroke-width="2.2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </span>
+          <input
+            class="field__input"
+            type="text"
+            name="username"
+            placeholder="Username"
+            autocomplete="username"
+          />
+        </label>
+
+        <label class="field">
+          <span class="field__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22">
+              <rect x="6.2" y="10.5" width="11.6" height="8.4" rx="1.8" fill="#f39a2e" />
+              <path
+                d="M8.4 10.5V8.6a3.6 3.6 0 0 1 7.2 0v1.9"
+                fill="none"
+                stroke="#f39a2e"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <circle cx="12" cy="14.7" r="1.15" fill="#fff" />
+            </svg>
+          </span>
+          <input
+            class="field__input"
+            type="password"
+            name="password"
+            placeholder="Password"
+            autocomplete="current-password"
+          />
+        </label>
+
+        <div class="login__row">
+          <label class="remember">
+            <input type="checkbox" name="remember" checked />
+            <span>Remember me</span>
+          </label>
+          <a class="forgot" href="#">Forgot Password?</a>
+        </div>
+
+        <button class="login__button" type="submit">LOGIN</button>
+      </form>
+    </main>
+  </body>
+</html>
